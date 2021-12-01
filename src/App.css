@@ -1,0 +1,84 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+
+body {
+  font-size: 20px;
+  font-family: 'Poppins',
+    sans-serif;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+.nav_btn {
+  display: none;
+}
+
+.responsive_nav {
+  display: none;
+}
+
+.main__heading {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 12rem;
+}
+
+.stroke_heading {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 12rem;
+  -webkit-text-stroke: 3px #ddd7d7;
+  color: transparent;
+}
+
+.right_in-enter {
+  opacity: 0;
+}
+
+.right_in-enter-active {
+  opacity: 1;
+  transition: opacity 200ms;
+}
+
+.right_in-exit {
+  opacity: 1;
+}
+
+.right_in-exit-active {
+  opacity: 0;
+  transition: opacity 200ms;
+}
+
+@media screen and (max-width:768px) {
+  .main__heading {
+    font-size: 5rem;
+  }
+
+  .stroke_heading {
+    font-size: 5rem;
+  }
+
+  .nav_btn {
+    display: block;
+  }
+
+  .responsive_nav {
+    display: flex;
+  }
+
+  .desktop_nav {
+    display: none;
+  }
+}
