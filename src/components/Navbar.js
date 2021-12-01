@@ -19,7 +19,7 @@ export const Navbar = () => {
 
   return (
     <>
-      <nav className="navbar bg-gray-800 fixed w-full p-4 flex justify-between shadow-lg z-20">
+      <nav className="navbar bg-gray-800 fixed w-full p-4 flex justify-between shadow-lg">
         <h1 className="text-xl font-bold md:text-2xl text-gray-300">
           Portfolio 2022
         </h1>
@@ -71,7 +71,7 @@ export const Navbar = () => {
       </nav>
       {/* mobile navbar */}
       {showNav && (
-        <div className="nav bg-gray-700 w-full p-6 flex flex-col justify-center align-center">
+        <div className="nav bg-gray-700 w-full p-6 flex flex-col justify-center align-center z-20">
           <div className="p-1 my-1 text-center hover:bg-gray-700">
             <a href="http://" className="text-gray-300 text-2xl">
               Home

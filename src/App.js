@@ -9,9 +9,7 @@ function App() {
     <div className="bg-gray-900">
       <Navbar />
       <Header />
-      <a name="about_me" href="/"></a>
       <AboutMe />
-      <a name="projects" href="/"></a>
       <WorkList />
     </div>
   );
