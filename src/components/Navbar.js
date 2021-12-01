@@ -1,21 +1,8 @@
 import React, { useState } from "react";
 import "../App.css";
-import ScrollReveal from "scrollreveal";
 
 export const Navbar = () => {
   const [showNav, setShowNav] = useState(false);
-
-  // ScrollReveal().reveal(".navbar", {
-  //   duration: 2000,
-  //   origin: "bottom",
-  //   distance: "-100px",
-  // });
-  // ScrollReveal().reveal(".nav", {
-  //   duration: 2000,
-  //   origin: "bottom",
-  //   distance: "-100px",
-  //   viewFactor: 10,
-  // });
 
   return (
     <>

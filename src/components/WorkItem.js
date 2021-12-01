@@ -1,29 +1,29 @@
 import React, { useState } from "react";
 import { TagSelector } from "./TagSelector";
-// import ScrollReveal from "scrollreveal";
+import ScrollReveal from "scrollreveal";
 import { CSSTransition } from "react-transition-group";
 
 export const WorkItem = ({ data }) => {
   const [isClicked, setIsClicked] = useState(false);
 
-  // const sr = ScrollReveal();
-  // sr.reveal(".info", {
-  //   duration: 1000,
-  //   origin: "right",
-  //   distance: "-100px",
-  //   viewFactor: 0.5,
-  //   opacity: 0,
-  //   scale: 0.1,
-  //   reset: true,
-  // });
+  const sr = ScrollReveal();
+  sr.reveal(".info", {
+    duration: 1000,
+    origin: "right",
+    distance: "-100px",
+    viewFactor: 0.5,
+    opacity: 0,
+    scale: 0.1,
+    reset: true,
+  });
 
-  // sr.reveal(".heading", {
-  //   duration: 1000,
-  //   origin: "bottom",
-  //   distance: "-100px",
-  //   viewFactor: 0.5,
-  //   scale: 0.3,
-  // });
+  sr.reveal(".heading", {
+    duration: 1000,
+    origin: "bottom",
+    distance: "-100px",
+    viewFactor: 0.5,
+    scale: 0.3,
+  });
 
   const classes = isClicked
     ? `md:self-start m-2 w-4/5 h-full md:w-3/4 md:h-3/4 lg:w-4/5 lg:h-5/6 rounded-lg filter brightness-50 blur-sm lg:absolute z-0 cursor-pointer info transition-all transform hover:shadow-xl hover:scale-95`
