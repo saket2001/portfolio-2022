@@ -32,6 +32,14 @@ export const Header = () => {
             <i class="fab fa-linkedin"></i>
           </a>
           <a
+            href="https://dribbble.com/saketc_2001"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-300 text-2xl transform transition-all hover:scale-95"
+          >
+            <i class="fab fa-dribbble"></i>
+          </a>
+          <a
             href="mailto:saketchandorkar123@gmail.com"
             target="_blank"
             rel="noopener noreferrer"

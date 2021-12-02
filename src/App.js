@@ -9,7 +9,9 @@ function App() {
     <div className="max-w-screen overflow-hidden bg-gray-900">
       <Navbar />
       <Header />
+      <div id="about_me"></div>
       <AboutMe />
+      <div id="projects"></div>
       <WorkList />
     </div>
   );

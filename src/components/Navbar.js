@@ -7,9 +7,9 @@ export const Navbar = () => {
   return (
     <>
       <nav className="navbar bg-gray-800 w-full p-4 flex justify-between shadow-lg">
-        <h1 className="text-xl font-bold md:text-2xl text-gray-300">
+        <a href="/" className="text-xl font-bold md:text-2xl text-gray-300">
           Saket Chandorkar
-        </h1>
+        </a>
 
         {/* desktop navbar */}
         <div className="hidden px-2 md:flex text-lg text-blue-300">
@@ -21,11 +21,6 @@ export const Navbar = () => {
           <div className="p-1 mx-1">
             <a href="#projects" className="text-gray-300">
               My Projects
-            </a>
-          </div>
-          <div className="p-1 mx-1">
-            <a href="/" className="text-gray-300">
-              Contact Me
             </a>
           </div>
           <div className="p-1 mx-1">
@@ -71,11 +66,6 @@ export const Navbar = () => {
           <div className="p-1 my-1 text-center hover:bg-gray-700">
             <a href="#projects" className="text-gray-300 text-2xl">
               My Projects
-            </a>
-          </div>
-          <div className="p-1 my-1 text-center hover:bg-gray-700">
-            <a href="#home" className="text-gray-300 text-2xl">
-              Contact Me
             </a>
           </div>
           <div className="p-1 my-1 text-center">

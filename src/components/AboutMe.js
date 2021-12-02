@@ -17,7 +17,7 @@ export const AboutMe = () => {
         <h2 className="text-2xl font-bold text-yellow-400 mt-5 mb-2">
           Skills.
         </h2>
-        <div className="w-4/5 grid grid-cols-1 gap-2 text-base">
+        <div className="w-full lg:w-4/5 grid grid-cols-1 gap-2 text-base">
           <div className="w-full grid grid-cols-2 items-center gap-2">
             <ProgressBar label="HTML" size="w-4/5" />
           </div>
