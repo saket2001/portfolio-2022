@@ -19,7 +19,7 @@ export const WorkList = () => {
       {viewState !== 10 && (
         <div className="flex w-full items-center justify-center">
           <button
-            className="border-2 border-yellow-500 text-yellow-500 py-2 px-5 m-2 rounded transition-all transform hover:shadow hover:-translate-y-2"
+            className="border-2 border-yellow-500 text-yellow-500 py-2 px-5 m-2 rounded transition-all transform hover:shadow hover:scale-95"
             onClick={() => setViewState(10)}
           >
             View More

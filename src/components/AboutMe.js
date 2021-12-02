@@ -5,7 +5,7 @@ import myImage from "../images/myimage.jpeg";
 
 export const AboutMe = () => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-5 min-w-screen min-h-screen text-gray-300 p-5 lg:py-5 py-3">
+    <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-2 lg:gap-5 min-w-screen min-h-screen text-gray-300 p-5 lg:py-5 py-3">
       {/* image with skills */}
       <div className="p-4 flex flex-col gap-2">
         {/* image */}

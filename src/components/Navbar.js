@@ -6,18 +6,13 @@ export const Navbar = () => {
 
   return (
     <>
-      <nav className="navbar bg-gray-800 fixed w-full p-4 flex justify-between shadow-lg">
+      <nav className="navbar bg-gray-800 w-full p-4 flex justify-between shadow-lg">
         <h1 className="text-xl font-bold md:text-2xl text-gray-300">
-          Portfolio 2022
+          Saket Chandorkar
         </h1>
 
         {/* desktop navbar */}
         <div className="hidden px-2 md:flex text-lg text-blue-300">
-          <div className="p-1 mx-1">
-            <a href="/" className="text-gray-300">
-              Home
-            </a>
-          </div>
           <div className="p-1 mx-1">
             <a href="#about_me" className="text-gray-300">
               About Me
@@ -31,6 +26,15 @@ export const Navbar = () => {
           <div className="p-1 mx-1">
             <a href="/" className="text-gray-300">
               Contact Me
+            </a>
+          </div>
+          <div className="p-1 mx-1">
+            <a
+              href="My_Resume.pdf"
+              className="text-yellow-400 border border-yellow-400 rounded-md p-2 transition-all hover:bg-yellow-400 hover:text-gray-900"
+              download="saket-chandorkar-resume"
+            >
+              Download Resume
             </a>
           </div>
         </div>
@@ -58,12 +62,7 @@ export const Navbar = () => {
       </nav>
       {/* mobile navbar */}
       {showNav && (
-        <div className="nav bg-gray-700 w-full p-6 flex flex-col justify-center align-center z-20">
-          <div className="p-1 my-1 text-center hover:bg-gray-700">
-            <a href="http://" className="text-gray-300 text-2xl">
-              Home
-            </a>
-          </div>
+        <div className="nav bg-gray-800 w-full p-6 flex flex-col gap-2 justify-center align-center">
           <div className="p-1 my-1 text-center hover:bg-gray-700">
             <a href="#about_me" className="text-gray-300 text-2xl">
               About Me
@@ -77,6 +76,15 @@ export const Navbar = () => {
           <div className="p-1 my-1 text-center hover:bg-gray-700">
             <a href="#home" className="text-gray-300 text-2xl">
               Contact Me
+            </a>
+          </div>
+          <div className="p-1 my-1 text-center">
+            <a
+              href="My_Resume.pdf"
+              className="text-yellow-400 border border-yellow-400 rounded-md p-2 hover:bg-yellow-400 hover:text-gray-900"
+              download="saket-chandorkar-resume"
+            >
+              Download Resume
             </a>
           </div>
         </div>

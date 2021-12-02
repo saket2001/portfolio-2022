@@ -1,36 +1,26 @@
 import React, { useState } from "react";
 import { TagSelector } from "./TagSelector";
-import ScrollReveal from "scrollreveal";
 import { CSSTransition } from "react-transition-group";
+// import ScrollMagic from "scrollmagic";
 
 export const WorkItem = ({ data }) => {
   const [isClicked, setIsClicked] = useState(false);
 
-  const sr = ScrollReveal();
-  sr.reveal(".info", {
-    duration: 1000,
-    origin: "right",
-    distance: "-100px",
-    viewFactor: 0.5,
-    opacity: 0,
-    scale: 0.1,
-    reset: true,
-  });
+  // const controller = new ScrollMagic.Controller();
 
-  sr.reveal(".heading", {
-    duration: 1000,
-    origin: "bottom",
-    distance: "-100px",
-    viewFactor: 0.5,
-    scale: 0.3,
-  });
+  // new ScrollMagic.Scene({
+  //   triggerElement: ".work-item",
+  //   duration: 1000,
+  // })
+  //   .setClassToggle(".work-item", "fadeIn")
+  //   .addTo(controller);
 
   const classes = isClicked
     ? `md:self-start m-2 w-4/5 h-full md:w-3/4 md:h-3/4 lg:w-4/5 lg:h-5/6 rounded-lg filter brightness-50 blur-sm lg:absolute z-0 cursor-pointer info transition-all transform hover:shadow-xl hover:scale-95`
     : `md:self-start m-2 w-4/5 h-4/5 md:w-3/4 md:h-3/4 lg:w-4/5 lg:h-5/6 rounded-lg filter brightness-90 lg:absolute z-0 cursor-pointer info transition-all transform hover:shadow-xl hover:scale-95`;
 
   return (
-    <div className="min-w-full h-full lg:h-screen flex flex-col items-center lg:items-end relative py-2 z-0 md:m-0 mx-3 my-5">
+    <div className=" min-w-full h-full lg:h-screen flex flex-col items-center lg:items-end relative py-2 z-0 md:m-0 mx-3 my-5">
       <img
         src={data?.image}
         className={classes}
@@ -83,7 +73,7 @@ export const WorkItem = ({ data }) => {
             {/* heading */}
             <h1 className="py-2 px-3 mb-1 text-2xl font-bold">{data?.title}</h1>
             {/* tags */}
-            <div className="w-full lg:w-4/5 px-3 mb-1 grid grid-cols-2 gap-2">
+            <div className="w-full lg:w-4/5 px-3 mb-1 grid lg:grid-cols-2 grid-cols-1 gap-2">
               {data?.tags.map((t) => (
                 <TagSelector tagName={t} />
               ))}
@@ -93,7 +83,7 @@ export const WorkItem = ({ data }) => {
               {data?.description}
             </p>
             {/* site link button */}
-            <button className="w-1/2 border-2 border-gray-400 py-1 px-3 m-3 rounded transition-all transform hover:scale-95">
+            <button className="lg:w-1/2 border-2 border-gray-400 py-1 px-3 m-3 rounded transition-all transform hover:scale-95">
               <a
                 href={data?.link}
                 target="_blank"
