@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import { gsap, Power3, SteppedEase } from "gsap/all";
+import { gsap, Power3 } from "gsap/all";
 
 export const Header = () => {
   const textItem = useRef();
