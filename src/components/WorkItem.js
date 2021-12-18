@@ -40,9 +40,9 @@ export const WorkItem = ({ data }) => {
       {
         scrollTrigger: {
           trigger: imgText.current,
-          start: "top center",
+          start: "-200px center",
         },
-        duration: 1,
+        duration: 0.5,
         opacity: 1,
         ease: Power3.easeOut,
       }

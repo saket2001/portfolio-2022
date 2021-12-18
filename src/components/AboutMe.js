@@ -16,34 +16,33 @@ export const AboutMe = () => {
       aboutLeft.current,
       {
         opacity: 0,
-        x: -300,
+        y: -300,
       },
       {
         scrollTrigger: {
           trigger: aboutLeft.current,
-          start: "200px center",
+          start: "500px center",
         },
-        duration: 1,
-        opacity: 2,
-        x: 0,
-        delay: 1,
+        duration: 5,
+        opacity: 1,
+        y: 0,
         ease: Power3.easeOut,
       }
     ).fromTo(
       aboutRight.current,
       {
         opacity: 0,
-        x: 500,
+        y: -300,
       },
       {
         scrollTrigger: {
           trigger: aboutRight.current,
-          start: "200px center",
+          start: "500px center",
         },
-        duration: 1,
+        duration: 5,
         opacity: 1,
-        x: 0,
-        ease: Power3.easeIn,
+        y: 0,
+        ease: Power3.easeOut,
       }
     );
   });
