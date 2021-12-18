@@ -6,7 +6,7 @@ import { WorkList } from "./components/WorkList";
 
 function App() {
   return (
-    <div className="max-w-screen overflow-hidden bg-gray-900">
+    <div className="max-w-screen overflow-hidden bg-gray-800">
       <Navbar />
       <Header />
       <div id="about_me"></div>

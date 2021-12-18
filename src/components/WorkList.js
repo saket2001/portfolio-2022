@@ -7,7 +7,7 @@ export const WorkList = () => {
 
   const list = [];
   for (let i = 0; i < viewState; i++) {
-    list.push(<WorkItem data={data[i]} />);
+    list.push(<WorkItem data={data[i]} key={i} />);
   }
 
   return (
@@ -19,7 +19,7 @@ export const WorkList = () => {
       {viewState !== 10 && (
         <div className="flex w-full items-center justify-center">
           <button
-            className="border-2 border-yellow-500 text-yellow-500 py-2 px-5 m-2 rounded transition-all transform hover:shadow hover:scale-95"
+            className="border-2 border-yellow-500 text-yellow-500 py-2 px-5 m-2 rounded transition-all transform hover:shadow hover:scale-95 my-5"
             onClick={() => setViewState(10)}
           >
             View More
@@ -29,7 +29,7 @@ export const WorkList = () => {
       {viewState === 10 && (
         <div className="flex w-full items-center justify-center">
           <button
-            className="border-2 border-yellow-500 text-yellow-500 py-2 px-5 m-2 rounded transition transform hover:scale-95"
+            className="border-2 border-yellow-500 text-yellow-500 py-2 px-5 m-2 rounded transition transform hover:scale-95 my-5"
             onClick={() => setViewState(6)}
           >
             Close Extra

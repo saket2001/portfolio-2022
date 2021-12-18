@@ -62,6 +62,20 @@ a {
   transition: opacity 200ms;
 }
 
+.line-1 {
+  position: relative;
+  top: 50%;
+  width: 20.18em;
+  border-right: 2px solid #ffffffbf;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
 /* .work-item {
   min-width: 100vw;
   min-height: 100vh;

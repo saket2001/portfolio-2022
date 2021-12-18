@@ -1,12 +1,36 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import "../App.css";
+import { gsap, Power3 } from "gsap";
 
 export const Navbar = () => {
   const [showNav, setShowNav] = useState(false);
+  const navbar = useRef();
+  const nav = useRef();
+
+  // animation logic
+  useEffect(() => {
+    const tl = gsap.timeline();
+
+    tl.from(navbar.current, {
+      opacity: 0,
+      y: -100,
+      duration: 0.5,
+      ease: Power3.easeOut,
+    }).from(nav.current, {
+      duration: 0.5,
+      opacity: 0,
+      y: -100,
+      yoyo: true,
+      ease: Power3.easeOut,
+    });
+  });
 
   return (
     <>
-      <nav className="navbar bg-gray-800 w-full p-4 flex justify-between shadow-lg">
+      <nav
+        className="navbar bg-gray-800 w-full p-4 flex justify-between"
+        ref={navbar}
+      >
         <a href="/" className="text-xl font-bold md:text-2xl text-gray-300">
           Saket Chandorkar
         </a>
@@ -57,7 +81,10 @@ export const Navbar = () => {
       </nav>
       {/* mobile navbar */}
       {showNav && (
-        <div className="nav bg-gray-800 w-full p-6 flex flex-col gap-2 justify-center align-center">
+        <div
+          className="nav bg-gray-800 w-full p-6 flex flex-col gap-2 justify-center align-center z-20"
+          ref={nav}
+        >
           <div className="p-1 my-1 text-center hover:bg-gray-700">
             <a href="#about_me" className="text-gray-300 text-2xl">
               About Me
